@@ -1,5 +1,4 @@
 import {
-  Activity,
   Bell,
   Brain,
   Calendar,
@@ -10,10 +9,10 @@ import {
   MessageSquareText,
   Rocket,
   Settings,
+  ShieldCheck,
   Sparkles,
-  Target,
-  TrendingUp,
   Users,
+  Wallet,
   WandSparkles,
 } from "lucide-react";
 import type { KpiItem, NavItem, QuickAction, Recommendation } from "./types";
@@ -28,10 +27,10 @@ export const navItems: NavItem[] = [
 ];
 
 export const kpiItems: KpiItem[] = [
-  { title: "Revenue Growth", value: "+18.4%", trend: "vs last month", icon: TrendingUp },
-  { title: "Active Users", value: "24,680", trend: "+1,240 this week", icon: Users },
-  { title: "Conversion", value: "7.2%", trend: "stable performance", icon: Target },
-  { title: "System Health", value: "99.9%", trend: "uptime monitored", icon: Activity },
+  { title: "Active Schemes", value: "128", trend: "+12 this month", icon: LayoutGrid },
+  { title: "Loan Eligibility", value: "82%", trend: "improved by 4%", icon: ShieldCheck },
+  { title: "Project Cost", value: "₹24.8L", trend: "within projected range", icon: Wallet },
+  { title: "Financial Score", value: "91/100", trend: "strong and stable", icon: Gauge },
 ];
 
 export const quickActions: QuickAction[] = [

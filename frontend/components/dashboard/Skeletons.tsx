@@ -1,5 +1,5 @@
 function SkeletonBox({ className }: { className: string }) {
-  return <div className={`animate-pulse rounded-xl bg-white/10 ${className}`} />;
+  return <div className={`animate-pulse rounded-[20px] bg-white/10 ${className}`} />;
 }
 
 export function DashboardSkeleton() {

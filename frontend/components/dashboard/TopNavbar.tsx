@@ -1,4 +1,4 @@
-import { Menu, Search } from "lucide-react";
+import { Bell, CircleUserRound, Menu, Search } from "lucide-react";
 
 type TopNavbarProps = {
   onOpenMobile: () => void;
@@ -25,6 +25,24 @@ export function TopNavbar({ onOpenMobile }: TopNavbarProps) {
             className="h-11 w-full rounded-xl border border-white/15 bg-white/5 pr-4 pl-10 text-sm text-slate-100 outline-none transition placeholder:text-slate-400 focus:border-[#22D3EE]/80"
           />
         </div>
+
+        <button
+          type="button"
+          aria-label="Notifications"
+          className="relative rounded-xl border border-white/15 bg-white/5 p-2.5 text-slate-200 transition hover:border-[#22D3EE]/60 hover:text-[#22D3EE]"
+        >
+          <Bell className="h-4 w-4" />
+          <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-[#16A34A]" />
+        </button>
+
+        <button
+          type="button"
+          aria-label="Profile placeholder"
+          className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-2.5 py-2 text-slate-100 transition hover:border-[#22D3EE]/60"
+        >
+          <CircleUserRound className="h-4 w-4 text-[#22D3EE]" />
+          <span className="hidden text-xs sm:inline">Profile</span>
+        </button>
       </div>
     </header>
   );
